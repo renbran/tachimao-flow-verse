@@ -5,8 +5,10 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // Use relative base path for GitHub Pages and Cloudflare Pages compatibility
-  base: './',
+  // GitHub Pages: Use repository name as base path
+  // Cloudflare Pages: Use root path
+  // Change to './' if deploying to Cloudflare Pages
+  base: mode === 'production' ? '/tachimao-flow-verse/' : '/',
   server: {
     host: "::",
     port: 8080,
