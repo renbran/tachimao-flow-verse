@@ -186,10 +186,10 @@ const OnboardingFlowchart = () => {
             <ChevronLeft className="mr-2 h-4 w-4" />
             Back to Home
           </Button>
-          <h1 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-2">
+          <h1 className="text-3xl sm:text-4xl font-bold text-foreground mb-2">
             Onboarding Flowchart
           </h1>
-          <p className="text-sm sm:text-base text-slate-600">
+          <p className="text-sm sm:text-base text-muted-foreground">
             Comprehensive employee onboarding process with detailed requirements for each stage
           </p>
         </div>
@@ -240,13 +240,13 @@ const OnboardingFlowchart = () => {
                   <ScrollArea className="h-[400px] sm:h-[500px] lg:h-[630px] pr-4">
                     <div className="space-y-4">
                       <div>
-                        <h3 className="text-xl font-bold text-slate-900 mb-2">
+                        <h3 className="text-xl font-bold text-foreground mb-2">
                           {selectedStage.title}
                         </h3>
                         <Badge className={getCategoryBadgeColor(selectedStage.category)}>
                           {selectedStage.category?.toUpperCase()}
                         </Badge>
-                        <p className="text-sm text-slate-600 mt-3">
+                        <p className="text-sm text-muted-foreground mt-3">
                           {selectedStage.description}
                         </p>
                       </div>
@@ -270,12 +270,12 @@ const OnboardingFlowchart = () => {
                               </AccordionTrigger>
                               <AccordionContent>
                                 <div className="space-y-3 pl-9">
-                                  <p className="text-sm text-slate-600">
+                                  <p className="text-sm text-muted-foreground">
                                     {req.description}
                                   </p>
 
                                   {req.duration && (
-                                    <div className="flex items-center text-sm text-slate-600">
+                                    <div className="flex items-center text-sm text-muted-foreground">
                                       <Clock className="mr-2 h-4 w-4" />
                                       <span className="font-medium">Duration:</span>
                                       <span className="ml-1">{req.duration}</span>
@@ -283,7 +283,7 @@ const OnboardingFlowchart = () => {
                                   )}
 
                                   {req.responsible && (
-                                    <div className="flex items-center text-sm text-slate-600">
+                                    <div className="flex items-center text-sm text-muted-foreground">
                                       <User className="mr-2 h-4 w-4" />
                                       <span className="font-medium">Responsible:</span>
                                       <span className="ml-1">{req.responsible}</span>
@@ -297,7 +297,7 @@ const OnboardingFlowchart = () => {
                                         {req.checklist.map((item, idx) => (
                                           <li key={idx} className="flex items-start text-sm">
                                             <CheckCircle2 className="mr-2 h-4 w-4 text-green-500 flex-shrink-0 mt-0.5" />
-                                            <span className="text-slate-700">{item}</span>
+                                            <span className="text-foreground">{item}</span>
                                           </li>
                                         ))}
                                       </ul>
@@ -313,7 +313,7 @@ const OnboardingFlowchart = () => {
                   </ScrollArea>
                 ) : (
                   <div className="h-[400px] sm:h-[500px] lg:h-[630px] flex items-center justify-center text-center">
-                    <div className="text-slate-400 px-4">
+                    <div className="text-muted-foreground px-4">
                       <div className="text-4xl sm:text-6xl mb-4">📋</div>
                       <p className="text-base sm:text-lg">Click on any stage in the flowchart</p>
                       <p className="text-xs sm:text-sm">to view its detailed requirements</p>
@@ -329,12 +329,12 @@ const OnboardingFlowchart = () => {
         <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
           <Card>
             <CardHeader className="pb-3">
-              <CardTitle className="text-xs sm:text-sm font-medium text-slate-600">
+              <CardTitle className="text-xs sm:text-sm font-medium text-muted-foreground">
                 Total Stages
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="text-2xl sm:text-3xl font-bold text-slate-900">
+              <div className="text-2xl sm:text-3xl font-bold text-foreground">
                 {onboardingStages.length}
               </div>
             </CardContent>
@@ -342,12 +342,12 @@ const OnboardingFlowchart = () => {
 
           <Card>
             <CardHeader className="pb-3">
-              <CardTitle className="text-xs sm:text-sm font-medium text-slate-600">
+              <CardTitle className="text-xs sm:text-sm font-medium text-muted-foreground">
                 Total Requirements
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="text-2xl sm:text-3xl font-bold text-slate-900">
+              <div className="text-2xl sm:text-3xl font-bold text-foreground">
                 {onboardingStages.reduce((acc, stage) => acc + stage.requirements.length, 0)}
               </div>
             </CardContent>
@@ -355,12 +355,12 @@ const OnboardingFlowchart = () => {
 
           <Card>
             <CardHeader className="pb-3">
-              <CardTitle className="text-xs sm:text-sm font-medium text-slate-600">
+              <CardTitle className="text-xs sm:text-sm font-medium text-muted-foreground">
                 Categories
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="text-2xl sm:text-3xl font-bold text-slate-900">
+              <div className="text-2xl sm:text-3xl font-bold text-foreground">
                 {new Set(onboardingStages.map(s => s.category)).size}
               </div>
             </CardContent>
@@ -368,12 +368,12 @@ const OnboardingFlowchart = () => {
 
           <Card>
             <CardHeader className="pb-3">
-              <CardTitle className="text-xs sm:text-sm font-medium text-slate-600">
+              <CardTitle className="text-xs sm:text-sm font-medium text-muted-foreground">
                 Avg. Req/Stage
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="text-2xl sm:text-3xl font-bold text-slate-900">
+              <div className="text-2xl sm:text-3xl font-bold text-foreground">
                 {(onboardingStages.reduce((acc, stage) => acc + stage.requirements.length, 0) / onboardingStages.length).toFixed(1)}
               </div>
             </CardContent>
