@@ -17,49 +17,50 @@ interface SolutionProps {
 
 const SolutionCard = ({ title, description, features, image, icon: Icon, reverse = false }: SolutionProps) => {
   return (
-    <section className="min-h-screen flex items-center py-20">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className={`grid lg:grid-cols-2 gap-12 items-center ${reverse ? 'lg:grid-flow-col-dense' : ''}`}>
+    <section className="min-h-[80vh] lg:min-h-screen flex items-center py-12 sm:py-16 lg:py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className={`grid lg:grid-cols-2 gap-8 md:gap-10 lg:gap-12 items-center ${reverse ? 'lg:grid-flow-col-dense' : ''}`}>
           {/* Content */}
-          <div className={`space-y-6 ${reverse ? 'lg:col-start-2' : ''}`}>
-            <div className="flex items-center gap-3">
-              <div className="p-3 glass-card glow-hover">
-                <Icon className="w-8 h-8 text-primary" />
+          <div className={`space-y-4 sm:space-y-6 ${reverse ? 'lg:col-start-2' : ''}`}>
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
+              <div className="p-2 sm:p-3 glass-card glow-hover flex-shrink-0">
+                <Icon className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />
               </div>
-              <h3 className="text-4xl lg:text-5xl font-bold">{title}</h3>
+              <h3 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-bold leading-tight">{title}</h3>
             </div>
-            
-            <p className="text-xl text-muted-foreground leading-relaxed">
+
+            <p className="text-base sm:text-lg lg:text-xl text-muted-foreground leading-relaxed">
               {description}
             </p>
-            
-            <div className="space-y-3">
+
+            <div className="space-y-2 sm:space-y-3">
               {features.map((feature, index) => (
-                <div key={index} className="flex items-center gap-3">
-                  <div className="w-2 h-2 rounded-full bg-primary glow-primary"></div>
-                  <span className="text-lg">{feature}</span>
+                <div key={index} className="flex items-start gap-3">
+                  <div className="w-2 h-2 rounded-full bg-primary glow-primary mt-2 flex-shrink-0"></div>
+                  <span className="text-sm sm:text-base lg:text-lg leading-relaxed">{feature}</span>
                 </div>
               ))}
             </div>
-            
-            <Button variant="outline" className="group interactive">
+
+            <Button variant="outline" className="group interactive mt-2">
               Learn More
               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
-          
+
           {/* Image */}
-          <div className={`relative ${reverse ? 'lg:col-start-1' : ''}`}>
+          <div className={`relative mt-8 lg:mt-0 ${reverse ? 'lg:col-start-1' : ''}`}>
             <div className="glass-card p-1 glow-hover interactive">
-              <img 
-                src={image} 
+              <img
+                src={image}
                 alt={title}
+                loading="lazy"
                 className="w-full h-auto rounded-xl object-cover"
               />
             </div>
             {/* Floating Elements */}
-            <div className="absolute -top-4 -right-4 w-16 h-16 rounded-full bg-primary/20 blur-lg float-animation"></div>
-            <div className="absolute -bottom-4 -left-4 w-12 h-12 rounded-full bg-secondary/20 blur-lg float-animation" style={{animationDelay: '1.5s'}}></div>
+            <div className="absolute -top-4 -right-4 w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-primary/20 blur-lg float-animation"></div>
+            <div className="absolute -bottom-4 -left-4 w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-secondary/20 blur-lg float-animation" style={{animationDelay: '1.5s'}}></div>
           </div>
         </div>
       </div>
@@ -137,13 +138,13 @@ const SolutionSection = () => {
   ];
 
   return (
-    <div className="relative">
+    <div id="solutions" className="relative">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-0 w-64 h-64 rounded-full bg-primary/5 blur-3xl"></div>
         <div className="absolute bottom-1/4 right-0 w-64 h-64 rounded-full bg-secondary/5 blur-3xl"></div>
       </div>
-      
+
       {solutions.map((solution, index) => (
         <SolutionCard key={index} {...solution} />
       ))}

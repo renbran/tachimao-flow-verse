@@ -1,10 +1,11 @@
 import { ArrowRight, Mail, Phone, MessageCircle, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import ContactForm from "./ContactForm";
 
 const CallToAction = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section id="contact" className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0 bg-gradient-hero opacity-90"></div>
       <div 
@@ -34,40 +35,55 @@ const CallToAction = () => {
         
         {/* Contact Options */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          <Card className="glass-card p-6 glow-hover interactive group cursor-pointer">
-            <Mail className="w-8 h-8 text-primary mb-4 mx-auto group-hover:scale-110 transition-transform" />
-            <h3 className="font-semibold mb-2">Email Us</h3>
-            <p className="text-sm text-muted-foreground">hello@tachimao.com</p>
-          </Card>
-          
-          <Card className="glass-card p-6 glow-hover interactive group cursor-pointer">
-            <Phone className="w-8 h-8 text-secondary mb-4 mx-auto group-hover:scale-110 transition-transform" />
-            <h3 className="font-semibold mb-2">Call Us</h3>
-            <p className="text-sm text-muted-foreground">+1 (555) 123-4567</p>
-          </Card>
-          
-          <Card className="glass-card p-6 glow-hover interactive group cursor-pointer">
-            <MessageCircle className="w-8 h-8 text-neon-blue mb-4 mx-auto group-hover:scale-110 transition-transform" />
-            <h3 className="font-semibold mb-2">Live Chat</h3>
-            <p className="text-sm text-muted-foreground">Available 24/7</p>
-          </Card>
-          
-          <Card className="glass-card p-6 glow-hover interactive group cursor-pointer">
-            <Calendar className="w-8 h-8 text-neon-purple mb-4 mx-auto group-hover:scale-110 transition-transform" />
-            <h3 className="font-semibold mb-2">Book a Call</h3>
-            <p className="text-sm text-muted-foreground">15-min consultation</p>
-          </Card>
+          <a href="mailto:hello@tachimao.com" className="block">
+            <Card className="glass-card p-6 glow-hover interactive group cursor-pointer h-full">
+              <Mail className="w-8 h-8 text-primary mb-4 mx-auto group-hover:scale-110 transition-transform" />
+              <h3 className="font-semibold mb-2">Email Us</h3>
+              <p className="text-sm text-muted-foreground">hello@tachimao.com</p>
+            </Card>
+          </a>
+
+          <a href="tel:+15551234567" className="block">
+            <Card className="glass-card p-6 glow-hover interactive group cursor-pointer h-full">
+              <Phone className="w-8 h-8 text-secondary mb-4 mx-auto group-hover:scale-110 transition-transform" />
+              <h3 className="font-semibold mb-2">Call Us</h3>
+              <p className="text-sm text-muted-foreground">+1 (555) 123-4567</p>
+            </Card>
+          </a>
+
+          <a href="https://tachimao.com/chat" target="_blank" rel="noopener noreferrer" className="block">
+            <Card className="glass-card p-6 glow-hover interactive group cursor-pointer h-full">
+              <MessageCircle className="w-8 h-8 text-neon-blue mb-4 mx-auto group-hover:scale-110 transition-transform" />
+              <h3 className="font-semibold mb-2">Live Chat</h3>
+              <p className="text-sm text-muted-foreground">Available 24/7</p>
+            </Card>
+          </a>
+
+          <a href="https://calendly.com/tachimao" target="_blank" rel="noopener noreferrer" className="block">
+            <Card className="glass-card p-6 glow-hover interactive group cursor-pointer h-full">
+              <Calendar className="w-8 h-8 text-neon-purple mb-4 mx-auto group-hover:scale-110 transition-transform" />
+              <h3 className="font-semibold mb-2">Book a Call</h3>
+              <p className="text-sm text-muted-foreground">15-min consultation</p>
+            </Card>
+          </a>
         </div>
-        
+
+        {/* Contact Form */}
+        <div className="my-16">
+          <ContactForm />
+        </div>
+
         {/* Main CTA */}
         <div className="space-y-6">
-          <Button 
-            size="lg" 
-            className="text-xl px-12 py-8 bg-primary hover:bg-primary-glow glow-hover pulse-glow interactive group"
-          >
-            Let's Talk - It's Free
-            <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform" />
-          </Button>
+          <a href="mailto:hello@tachimao.com">
+            <Button
+              size="lg"
+              className="text-xl px-12 py-8 bg-primary hover:bg-primary-glow glow-hover pulse-glow interactive group"
+            >
+              Let's Talk - It's Free
+              <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </a>
           
           <p className="text-sm text-muted-foreground">
             No commitment required • Free consultation • Custom solution design

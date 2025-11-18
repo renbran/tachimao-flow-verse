@@ -1,7 +1,8 @@
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Float, OrbitControls, Environment, Line } from '@react-three/drei';
-import { useRef, useState } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import * as THREE from 'three';
+import { Sparkles, Zap, Network } from 'lucide-react';
 
 interface FloatingElementProps {
   position: [number, number, number];
@@ -180,21 +181,89 @@ const Scene3D = () => {
   );
 };
 
-const Interactive3DScene = () => {
+// Mobile fallback component
+const MobileFallback = () => {
   return (
-    <div className="w-full h-[600px] relative">
+    <div className="w-full h-[400px] sm:h-[500px] relative flex items-center justify-center">
+      <div className="glass-card p-8 sm:p-12 text-center max-w-lg mx-4">
+        <div className="flex justify-center gap-4 sm:gap-6 mb-6">
+          <div className="p-3 sm:p-4 glass-card glow-hover pulse-glow">
+            <Network className="w-8 h-8 sm:w-12 sm:h-12 text-primary" />
+          </div>
+          <div className="p-3 sm:p-4 glass-card glow-hover pulse-glow" style={{animationDelay: '0.5s'}}>
+            <Zap className="w-8 h-8 sm:w-12 sm:h-12 text-accent" />
+          </div>
+          <div className="p-3 sm:p-4 glass-card glow-hover pulse-glow" style={{animationDelay: '1s'}}>
+            <Sparkles className="w-8 h-8 sm:w-12 sm:h-12 text-secondary" />
+          </div>
+        </div>
+        <h4 className="text-xl sm:text-2xl font-bold text-primary mb-3">
+          Interconnected Solutions
+        </h4>
+        <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">
+          Our AI-powered platform seamlessly integrates CRM, automation, analytics, and intelligent agents
+          to create one unified system for your business.
+        </p>
+      </div>
+    </div>
+  );
+};
+
+const Interactive3DScene = () => {
+  const [isMobile, setIsMobile] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    // Detect mobile device
+    const checkMobile = () => {
+      const mobile = window.innerWidth < 768 ||
+                    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      setIsMobile(mobile);
+    };
+
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+
+    // Delay loading to improve initial page load
+    const timer = setTimeout(() => setIsLoaded(true), 100);
+
+    return () => {
+      window.removeEventListener('resize', checkMobile);
+      clearTimeout(timer);
+    };
+  }, []);
+
+  // Show mobile fallback on mobile devices
+  if (isMobile) {
+    return <MobileFallback />;
+  }
+
+  // Show placeholder while loading
+  if (!isLoaded) {
+    return (
+      <div className="w-full h-[600px] relative flex items-center justify-center">
+        <div className="text-muted-foreground">Loading 3D scene...</div>
+      </div>
+    );
+  }
+
+  return (
+    <div className="w-full h-[400px] sm:h-[500px] lg:h-[600px] relative">
       <Canvas
         camera={{ position: [5, 5, 5], fov: 60 }}
         shadows
         className="bg-transparent"
+        dpr={[1, 2]} // Limit pixel ratio for performance
       >
         <Scene3D />
       </Canvas>
-      
+
       {/* Overlay Info */}
-      <div className="absolute bottom-4 left-4 glass-card p-4 max-w-xs">
-        <h4 className="text-lg font-semibold text-primary mb-2">Interactive Network</h4>
-        <p className="text-sm text-muted-foreground">
+      <div className="absolute bottom-4 left-4 glass-card p-3 sm:p-4 max-w-xs hidden md:block">
+        <h4 className="text-base sm:text-lg font-semibold text-primary mb-2">
+          Interactive Network
+        </h4>
+        <p className="text-xs sm:text-sm text-muted-foreground">
           Explore our interconnected solutions. Hover and rotate to see how all systems work together seamlessly.
         </p>
       </div>

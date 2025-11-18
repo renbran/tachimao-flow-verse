@@ -54,9 +54,11 @@ const Navigation = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:block">
-            <Button className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-primary-foreground font-semibold px-6 py-2 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-              Get Started
-            </Button>
+            <a href="#contact">
+              <Button className="bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-primary-foreground font-semibold px-6 py-2 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                Get Started
+              </Button>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -103,9 +105,11 @@ const Navigation = () => {
               )
             ))}
             <div className="pt-4 pb-3 border-t border-border">
-              <Button className="w-full bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-primary-foreground font-semibold py-2 rounded-full transition-all duration-300">
-                Get Started
-              </Button>
+              <a href="#contact" onClick={() => setIsMenuOpen(false)} className="block">
+                <Button className="w-full bg-gradient-to-r from-primary to-accent hover:from-primary/90 hover:to-accent/90 text-primary-foreground font-semibold py-2 rounded-full transition-all duration-300">
+                  Get Started
+                </Button>
+              </a>
             </div>
           </div>
         </div>

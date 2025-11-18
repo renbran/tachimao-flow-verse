@@ -1,7 +1,9 @@
 import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import SolutionSection from "@/components/SolutionSection";
+import AboutSection from "@/components/AboutSection";
 import CallToAction from "@/components/CallToAction";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -9,7 +11,9 @@ const Index = () => {
       <Navigation />
       <HeroSection />
       <SolutionSection />
+      <AboutSection />
       <CallToAction />
+      <Footer />
     </div>
   );
 };

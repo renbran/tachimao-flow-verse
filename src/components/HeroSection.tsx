@@ -50,13 +50,15 @@ const HeroSection = () => {
         </div>
 
         {/* CTA Button */}
-        <Button 
-          size="lg" 
-          className="text-lg px-8 py-6 bg-primary hover:bg-primary-glow glow-hover pulse-glow interactive group"
-        >
-          Let's Talk
-          <Sparkles className="w-5 h-5 ml-2 group-hover:rotate-12 transition-transform" />
-        </Button>
+        <a href="#contact">
+          <Button
+            size="lg"
+            className="text-lg px-8 py-6 bg-primary hover:bg-primary-glow glow-hover pulse-glow interactive group"
+          >
+            Let's Talk
+            <Sparkles className="w-5 h-5 ml-2 group-hover:rotate-12 transition-transform" />
+          </Button>
+        </a>
         
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center">

@@ -21,6 +21,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 import { Button } from '@/components/ui/button';
 import { CheckCircle2, Clock, User, ChevronLeft } from 'lucide-react';
 import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
 
 // Custom Node Component
 const StageNode = ({ data }: NodeProps) => {
@@ -377,6 +378,8 @@ const OnboardingFlowchart = () => {
           </Card>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };
