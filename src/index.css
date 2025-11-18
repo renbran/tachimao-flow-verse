@@ -8,7 +8,7 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Futuristic Blue-Purple Theme */
+    /* Scholarix Global Academic Theme */
     --background: 220 30% 5%;
     --foreground: 210 40% 98%;
 
@@ -18,43 +18,44 @@ All colors MUST be HSL.
     --popover: 220 25% 8%;
     --popover-foreground: 210 40% 98%;
 
-    /* Electric Blue Primary */
-    --primary: 213 100% 50%;
+    /* Deep Academic Blue Primary */
+    --primary: 222 66% 33%;
     --primary-foreground: 210 40% 98%;
-    --primary-glow: 213 100% 60%;
+    --primary-glow: 222 66% 43%;
 
-    /* Deep Purple Secondary */
-    --secondary: 263 85% 65%;
+    /* Scholarly Purple Secondary */
+    --secondary: 270 66% 51%;
     --secondary-foreground: 210 40% 98%;
 
     --muted: 220 15% 15%;
     --muted-foreground: 215 16% 65%;
 
-    --accent: 263 85% 65%;
-    --accent-foreground: 210 40% 98%;
+    /* Gold Accent for Excellence */
+    --accent: 38 92% 50%;
+    --accent-foreground: 220 30% 5%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 220 20% 20%;
     --input: 220 20% 15%;
-    --ring: 213 100% 50%;
+    --ring: 222 66% 33%;
 
     --radius: 1rem;
 
-    /* Custom Futuristic Variables */
+    /* Custom Academic Variables */
     --glass: 220 25% 10%;
     --glass-border: 220 40% 25%;
-    --neon-blue: 195 100% 75%;
-    --neon-purple: 280 100% 80%;
+    --neon-blue: 222 66% 43%;
+    --neon-purple: 270 66% 61%;
     
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(213 100% 50%), hsl(263 85% 65%));
+    --gradient-hero: linear-gradient(135deg, hsl(222 66% 33%), hsl(270 66% 51%));
     --gradient-card: linear-gradient(145deg, hsl(220 25% 8% / 0.6), hsl(220 25% 12% / 0.8));
-    --gradient-glow: radial-gradient(circle at center, hsl(213 100% 50% / 0.3), transparent 70%);
+    --gradient-glow: radial-gradient(circle at center, hsl(222 66% 33% / 0.3), transparent 70%);
     
     /* Shadows */
-    --shadow-glow: 0 0 40px hsl(213 100% 50% / 0.3);
+    --shadow-glow: 0 0 40px hsl(222 66% 33% / 0.3);
     --shadow-glass: 0 8px 32px hsl(220 30% 5% / 0.4);
     
     /* Animations */

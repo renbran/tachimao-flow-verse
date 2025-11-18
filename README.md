@@ -1,8 +1,12 @@
-# Welcome to your Lovable project
+# Scholarix Global - Study Abroad Excellence
 
 ## Live Demo
 
 🚀 **Live Site**: https://renbran.github.io/tachimao-flow-verse/
+
+**Machine Speed, Human Expertise. Real Results.**
+
+Transform your academic future with expert guidance for studying abroad. We provide personalized counseling, university admissions support, scholarship assistance, and visa guidance.
 
 ## Project info
 

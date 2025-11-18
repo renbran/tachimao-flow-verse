@@ -23,25 +23,25 @@ const HeroSection = () => {
       <div className="relative z-10 text-center max-w-6xl mx-auto px-6">
         {/* Badge */}
         <div className="inline-flex items-center gap-2 glass-card px-4 py-2 mb-8 glow-hover">
-          <Sparkles className="w-4 h-4 text-neon-blue" />
-          <span className="text-sm font-medium">Founded 2022 • Tech Innovation Leader</span>
+          <Sparkles className="w-4 h-4 text-accent" />
+          <span className="text-sm font-medium">Founded 2022 • Global Education Excellence</span>
         </div>
         
         {/* Main Heading */}
-        <h1 className="text-6xl lg:text-8xl font-bold mb-6 bg-gradient-to-r from-foreground to-neon-blue bg-clip-text text-transparent leading-tight">
-          Tachimao
+        <h1 className="text-6xl lg:text-8xl font-bold mb-6 bg-gradient-to-r from-foreground to-accent bg-clip-text text-transparent leading-tight">
+          Scholarix Global
         </h1>
         
         {/* Tagline */}
         <h2 className="text-2xl lg:text-4xl font-semibold mb-8 text-muted-foreground">
-          One System. <span className="text-primary glow-primary">Zero Headaches.</span>
+          Machine Speed, Human Expertise. <span className="text-accent glow-primary">Real Results.</span>
         </h2>
         
         {/* Description */}
         <p className="text-xl lg:text-2xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed">
-          Transform your business with cutting-edge technology solutions. 
-          We optimize workflows, implement intelligent systems, and automate processes 
-          that drive real results.
+          Transform your academic future with expert guidance for studying abroad. 
+          We provide personalized counseling, university admissions support, scholarship assistance, 
+          and visa guidance to help you achieve your educational dreams.
         </p>
         
         {/* Interactive 3D Scene */}

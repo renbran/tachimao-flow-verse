@@ -18,19 +18,19 @@ const Footer = () => {
           <div className="space-y-4">
             <div>
               <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-2">
-                Tachimao
+                Scholarix Global
               </h3>
               <p className="text-sm text-muted-foreground">
-                One System. Zero Headaches.
+                Machine Speed, Human Expertise. Real Results.
               </p>
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Transforming businesses with cutting-edge technology solutions since 2022.
+              Empowering students to achieve their academic dreams since 2022.
             </p>
             {/* Social Media Links */}
             <div className="flex gap-3">
               <a
-                href="https://linkedin.com/company/tachimao"
+                href="https://linkedin.com/company/scholarixglobal"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 glass-card glow-hover interactive hover:text-primary"
@@ -39,7 +39,7 @@ const Footer = () => {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="https://twitter.com/tachimao"
+                href="https://twitter.com/scholarixglobal"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 glass-card glow-hover interactive hover:text-primary"
@@ -48,7 +48,7 @@ const Footer = () => {
                 <Twitter className="w-5 h-5" />
               </a>
               <a
-                href="https://github.com/tachimao"
+                href="https://github.com/scholarixglobal"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 glass-card glow-hover interactive hover:text-primary"
@@ -57,7 +57,7 @@ const Footer = () => {
                 <Github className="w-5 h-5" />
               </a>
               <a
-                href="https://facebook.com/tachimao"
+                href="https://facebook.com/scholarixglobal"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 glass-card glow-hover interactive hover:text-primary"
@@ -134,10 +134,10 @@ const Footer = () => {
               <li className="flex items-start gap-2">
                 <Mail className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
                 <a
-                  href="mailto:hello@tachimao.com"
+                  href="mailto:hello@scholarixglobal.com"
                   className="text-muted-foreground hover:text-primary transition-colors duration-200 text-sm"
                 >
-                  hello@tachimao.com
+                  hello@scholarixglobal.com
                 </a>
               </li>
               <li className="flex items-start gap-2">
@@ -163,7 +163,7 @@ const Footer = () => {
         <div className="pt-8 border-t border-glass-border/30">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground text-center md:text-left">
-              &copy; {currentYear} Tachimao. All rights reserved.
+              &copy; {currentYear} Scholarix Global. All rights reserved.
             </p>
             <div className="flex gap-6 text-sm">
               <Link

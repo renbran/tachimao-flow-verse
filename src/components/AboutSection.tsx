@@ -5,31 +5,31 @@ const AboutSection = () => {
   const values = [
     {
       icon: Target,
-      title: "Innovation First",
-      description: "We leverage cutting-edge technology to solve complex business challenges.",
+      title: "Student-Focused Excellence",
+      description: "We prioritize your academic goals and career aspirations above all else.",
     },
     {
       icon: Zap,
-      title: "Speed & Efficiency",
-      description: "Rapid implementation and deployment to get your systems running fast.",
+      title: "Fast & Efficient Process",
+      description: "Streamlined application processes with AI-powered tools for quick results.",
     },
     {
       icon: Users,
-      title: "Client-Centric",
-      description: "Your success is our mission. We build solutions tailored to your needs.",
+      title: "Personalized Guidance",
+      description: "Expert counselors provide tailored advice for your unique academic journey.",
     },
     {
       icon: Shield,
-      title: "Security First",
-      description: "Enterprise-grade security and compliance built into every solution.",
+      title: "Trusted & Transparent",
+      description: "Transparent processes, verified partnerships with top universities worldwide.",
     },
   ];
 
   const stats = [
-    { number: "100+", label: "Successful Implementations" },
-    { number: "50+", label: "Enterprise Clients" },
-    { number: "99.9%", label: "Uptime Guarantee" },
-    { number: "24/7", label: "Support Available" },
+    { number: "5000+", label: "Successful Admissions" },
+    { number: "200+", label: "Partner Universities" },
+    { number: "98%", label: "Visa Success Rate" },
+    { number: "24/7", label: "Student Support" },
   ];
 
   return (
@@ -52,17 +52,17 @@ const AboutSection = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 glass-card px-4 py-2 mb-6">
-            <Award className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium">About Tachimao</span>
+            <Award className="w-4 h-4 text-accent" />
+            <span className="text-sm font-medium">About Scholarix Global</span>
           </div>
 
           <h2 className="text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-foreground via-primary to-accent bg-clip-text text-transparent">
-            Pioneering Business Automation
+            Pioneering Global Education
           </h2>
 
           <p className="text-xl lg:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Since 2022, we've been transforming how businesses operate with intelligent
-            automation and cutting-edge AI solutions.
+            Since 2022, we've been transforming students' academic futures with expert guidance
+            and AI-powered study abroad solutions.
           </p>
         </div>
 
@@ -72,27 +72,27 @@ const AboutSection = () => {
             <div className="space-y-6">
               <h3 className="text-3xl lg:text-4xl font-bold">Our Story</h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Founded in 2022, Tachimao emerged from a simple observation: businesses
-                were drowning in repetitive tasks and disconnected systems. We knew there
-                had to be a better way.
+                Founded in 2022, Scholarix Global emerged from a simple belief: every student
+                deserves expert guidance to achieve their international education dreams. We knew
+                the process could be smoother, faster, and more successful.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Today, we're proud to serve 50+ enterprise clients worldwide, delivering
-                AI-powered solutions that eliminate headaches and unlock growth potential.
+                Today, we're proud to have helped 5000+ students gain admission to top universities
+                worldwide, with a 98% visa success rate and partnerships with 200+ institutions.
               </p>
             </div>
 
             <div className="space-y-6">
               <h3 className="text-3xl lg:text-4xl font-bold">Our Mission</h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                To empower businesses with intelligent automation that simplifies
-                operations, enhances productivity, and drives sustainable growth.
+                To empower students with expert guidance, AI-powered tools, and personalized support
+                that makes studying abroad accessible, affordable, and achievable for everyone.
               </p>
               <div className="flex items-center gap-3 p-4 glass-card">
-                <TrendingUp className="w-8 h-8 text-primary flex-shrink-0" />
+                <TrendingUp className="w-8 h-8 text-accent flex-shrink-0" />
                 <p className="text-sm text-muted-foreground">
-                  <span className="text-foreground font-semibold">One System. Zero Headaches.</span>
-                  <br />Our promise to every client.
+                  <span className="text-foreground font-semibold">Machine Speed, Human Expertise. Real Results.</span>
+                  <br />Our promise to every student.
                 </p>
               </div>
             </div>

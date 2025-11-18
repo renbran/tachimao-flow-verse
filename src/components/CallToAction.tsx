@@ -24,22 +24,22 @@ const CallToAction = () => {
       
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
         {/* Heading */}
-        <h2 className="text-5xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
-          Ready to Transform Your Business?
+        <h2 className="text-5xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-foreground to-accent bg-clip-text text-transparent">
+          Ready to Transform Your Future?
         </h2>
         
         <p className="text-xl lg:text-2xl text-muted-foreground mb-12 max-w-4xl mx-auto">
-          Join hundreds of companies that have streamlined their operations with Tachimao. 
-          Let's discuss how we can eliminate your business headaches.
+          Join thousands of students who have achieved their study abroad dreams with Scholarix Global. 
+          Let's discuss how we can help you reach your academic goals.
         </p>
         
         {/* Contact Options */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          <a href="mailto:hello@tachimao.com" className="block">
+          <a href="mailto:hello@scholarixglobal.com" className="block">
             <Card className="glass-card p-6 glow-hover interactive group cursor-pointer h-full">
-              <Mail className="w-8 h-8 text-primary mb-4 mx-auto group-hover:scale-110 transition-transform" />
+              <Mail className="w-8 h-8 text-accent mb-4 mx-auto group-hover:scale-110 transition-transform" />
               <h3 className="font-semibold mb-2">Email Us</h3>
-              <p className="text-sm text-muted-foreground">hello@tachimao.com</p>
+              <p className="text-sm text-muted-foreground">hello@scholarixglobal.com</p>
             </Card>
           </a>
 
