@@ -19,20 +19,20 @@ All colors MUST be HSL.
     --popover-foreground: 210 40% 98%;
 
     /* Deep Academic Blue Primary */
-    --primary: 222 66% 33%;
+    --primary: 222 66% 55%;
     --primary-foreground: 210 40% 98%;
-    --primary-glow: 222 66% 43%;
+    --primary-glow: 222 66% 65%;
 
     /* Scholarly Purple Secondary */
-    --secondary: 270 66% 51%;
+    --secondary: 270 66% 65%;
     --secondary-foreground: 210 40% 98%;
 
     --muted: 220 15% 15%;
-    --muted-foreground: 215 16% 65%;
+    --muted-foreground: 215 16% 85%;
 
     /* Gold Accent for Excellence */
-    --accent: 38 92% 50%;
-    --accent-foreground: 220 30% 5%;
+    --accent: 38 92% 55%;
+    --accent-foreground: 220 30% 10%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
@@ -45,9 +45,9 @@ All colors MUST be HSL.
 
     /* Custom Academic Variables */
     --glass: 220 25% 10%;
-    --glass-border: 220 40% 25%;
-    --neon-blue: 222 66% 43%;
-    --neon-purple: 270 66% 61%;
+    --glass-border: 220 40% 30%;
+    --neon-blue: 222 66% 60%;
+    --neon-purple: 270 66% 70%;
     
     /* Gradients */
     --gradient-hero: linear-gradient(135deg, hsl(222 66% 33%), hsl(270 66% 51%));
