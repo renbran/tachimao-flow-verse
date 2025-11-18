@@ -14,6 +14,8 @@ const HeroSection = () => {
                        radial-gradient(circle at 75% 75%, hsl(263 85% 65% / 0.3) 0%, transparent 50%)`
         }}
       ></div>
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-black/40"></div>
       
       {/* Floating Elements */}
       <div className="absolute top-1/4 left-1/4 w-32 h-32 rounded-full bg-primary/10 blur-xl float-animation"></div>
@@ -33,12 +35,12 @@ const HeroSection = () => {
         </h1>
         
         {/* Tagline */}
-        <h2 className="text-2xl lg:text-4xl font-semibold mb-8 text-muted-foreground">
+        <h2 className="text-2xl lg:text-4xl font-semibold mb-8 text-foreground">
           Machine Speed, Human Expertise. <span className="text-accent glow-primary">Real Results.</span>
         </h2>
         
         {/* Description */}
-        <p className="text-xl lg:text-2xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed">
+        <p className="text-xl lg:text-2xl text-foreground/90 mb-12 max-w-4xl mx-auto leading-relaxed">
           Transform your academic future with expert guidance for studying abroad. 
           We provide personalized counseling, university admissions support, scholarship assistance, 
           and visa guidance to help you achieve your educational dreams.

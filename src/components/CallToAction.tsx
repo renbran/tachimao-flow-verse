@@ -16,6 +16,8 @@ const CallToAction = () => {
                        radial-gradient(circle at 40% 40%, hsl(195 100% 75% / 0.2) 0%, transparent 50%)`
         }}
       ></div>
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-black/40"></div>
       
       {/* Floating Elements */}
       <div className="absolute top-1/4 left-1/4 w-40 h-40 rounded-full bg-primary/10 blur-2xl float-animation"></div>
@@ -28,7 +30,7 @@ const CallToAction = () => {
           Ready to Transform Your Future?
         </h2>
         
-        <p className="text-xl lg:text-2xl text-muted-foreground mb-12 max-w-4xl mx-auto">
+        <p className="text-xl lg:text-2xl text-foreground/90 mb-12 max-w-4xl mx-auto">
           Join thousands of students who have achieved their study abroad dreams with Scholarix Global. 
           Let's discuss how we can help you reach your academic goals.
         </p>

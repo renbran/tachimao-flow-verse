@@ -43,6 +43,8 @@ const AboutSection = () => {
                        radial-gradient(circle at 70% 80%, hsl(263 85% 65% / 0.3) 0%, transparent 50%)`
         }}
       ></div>
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-black/30"></div>
 
       {/* Floating Elements */}
       <div className="absolute top-1/4 right-1/4 w-32 h-32 rounded-full bg-primary/10 blur-2xl float-animation"></div>
@@ -60,7 +62,7 @@ const AboutSection = () => {
             Pioneering Global Education
           </h2>
 
-          <p className="text-xl lg:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl lg:text-2xl text-foreground/90 max-w-4xl mx-auto leading-relaxed">
             Since 2022, we've been transforming students' academic futures with expert guidance
             and AI-powered study abroad solutions.
           </p>
