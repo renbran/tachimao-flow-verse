@@ -29,29 +29,29 @@ const CallToAction = () => {
         </h2>
         
         <p className="text-xl lg:text-2xl text-muted-foreground mb-12 max-w-4xl mx-auto">
-          Join hundreds of companies that have streamlined their operations with Tachimao. 
-          Let's discuss how we can eliminate your business headaches.
+          Join forward-thinking enterprises leveraging data and AI with Scholarix Global.
+          Let's discuss how we can transform your business with intelligent insights.
         </p>
         
         {/* Contact Options */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          <a href="mailto:hello@tachimao.com" className="block">
+          <a href="mailto:hello@scholarixglobal.com" className="block">
             <Card className="glass-card p-6 glow-hover interactive group cursor-pointer h-full">
               <Mail className="w-8 h-8 text-primary mb-4 mx-auto group-hover:scale-110 transition-transform" />
               <h3 className="font-semibold mb-2">Email Us</h3>
-              <p className="text-sm text-muted-foreground">hello@tachimao.com</p>
+              <p className="text-sm text-muted-foreground">hello@scholarixglobal.com</p>
             </Card>
           </a>
 
-          <a href="tel:+15551234567" className="block">
+          <a href="tel:+971501234567" className="block">
             <Card className="glass-card p-6 glow-hover interactive group cursor-pointer h-full">
               <Phone className="w-8 h-8 text-secondary mb-4 mx-auto group-hover:scale-110 transition-transform" />
               <h3 className="font-semibold mb-2">Call Us</h3>
-              <p className="text-sm text-muted-foreground">+1 (555) 123-4567</p>
+              <p className="text-sm text-muted-foreground">+971 50 123 4567</p>
             </Card>
           </a>
 
-          <a href="https://tachimao.com/chat" target="_blank" rel="noopener noreferrer" className="block">
+          <a href="https://scholarixglobal.com/chat" target="_blank" rel="noopener noreferrer" className="block">
             <Card className="glass-card p-6 glow-hover interactive group cursor-pointer h-full">
               <MessageCircle className="w-8 h-8 text-neon-blue mb-4 mx-auto group-hover:scale-110 transition-transform" />
               <h3 className="font-semibold mb-2">Live Chat</h3>
@@ -59,11 +59,11 @@ const CallToAction = () => {
             </Card>
           </a>
 
-          <a href="https://calendly.com/tachimao" target="_blank" rel="noopener noreferrer" className="block">
+          <a href="https://calendly.com/scholarixglobal" target="_blank" rel="noopener noreferrer" className="block">
             <Card className="glass-card p-6 glow-hover interactive group cursor-pointer h-full">
               <Calendar className="w-8 h-8 text-neon-purple mb-4 mx-auto group-hover:scale-110 transition-transform" />
               <h3 className="font-semibold mb-2">Book a Call</h3>
-              <p className="text-sm text-muted-foreground">15-min consultation</p>
+              <p className="text-sm text-muted-foreground">30-min consultation</p>
             </Card>
           </a>
         </div>
@@ -75,12 +75,12 @@ const CallToAction = () => {
 
         {/* Main CTA */}
         <div className="space-y-6">
-          <a href="mailto:hello@tachimao.com">
+          <a href="mailto:hello@scholarixglobal.com">
             <Button
               size="lg"
               className="text-xl px-12 py-8 bg-primary hover:bg-primary-glow glow-hover pulse-glow interactive group"
             >
-              Let's Talk - It's Free
+              Start Your Transformation
               <ArrowRight className="w-6 h-6 ml-3 group-hover:translate-x-1 transition-transform" />
             </Button>
           </a>
@@ -95,15 +95,15 @@ const CallToAction = () => {
           <div className="flex flex-col md:flex-row justify-center items-center gap-8 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-primary glow-primary"></div>
-              <span>Founded 2022</span>
+              <span>UAE-Based</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-secondary glow-primary"></div>
-              <span>100+ Successful Implementations</span>
+              <span>50+ Enterprise Clients</span>
             </div>
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 rounded-full bg-neon-blue glow-primary"></div>
-              <span>24/7 Support</span>
+              <span>24/7 Expert Support</span>
             </div>
           </div>
         </div>

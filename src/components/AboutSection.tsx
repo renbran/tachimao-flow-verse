@@ -5,31 +5,31 @@ const AboutSection = () => {
   const values = [
     {
       icon: Target,
-      title: "Innovation First",
-      description: "We leverage cutting-edge technology to solve complex business challenges.",
+      title: "Data-Driven Excellence",
+      description: "We transform complex data into clear, actionable insights that drive strategic decisions.",
     },
     {
       icon: Zap,
-      title: "Speed & Efficiency",
-      description: "Rapid implementation and deployment to get your systems running fast.",
+      title: "AI Innovation",
+      description: "Leveraging cutting-edge AI and machine learning to unlock competitive advantages.",
     },
     {
       icon: Users,
-      title: "Client-Centric",
-      description: "Your success is our mission. We build solutions tailored to your needs.",
+      title: "Partnership Approach",
+      description: "We collaborate closely with your team to ensure solutions align with business goals.",
     },
     {
       icon: Shield,
-      title: "Security First",
-      description: "Enterprise-grade security and compliance built into every solution.",
+      title: "Enterprise Security",
+      description: "Bank-level security and compliance standards protecting your valuable data assets.",
     },
   ];
 
   const stats = [
-    { number: "100+", label: "Successful Implementations" },
     { number: "50+", label: "Enterprise Clients" },
-    { number: "99.9%", label: "Uptime Guarantee" },
-    { number: "24/7", label: "Support Available" },
+    { number: "100+", label: "AI Models Deployed" },
+    { number: "98%", label: "Client Satisfaction" },
+    { number: "24/7", label: "Expert Support" },
   ];
 
   return (
@@ -53,16 +53,16 @@ const AboutSection = () => {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 glass-card px-4 py-2 mb-6">
             <Award className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium">About Tachimao</span>
+            <span className="text-sm font-medium">About Scholarix Global</span>
           </div>
 
           <h2 className="text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-foreground via-primary to-accent bg-clip-text text-transparent">
-            Pioneering Business Automation
+            Pioneering Data Analytics & Enterprise AI
           </h2>
 
           <p className="text-xl lg:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Since 2022, we've been transforming how businesses operate with intelligent
-            automation and cutting-edge AI solutions.
+            UAE-based consultancy empowering enterprises with intelligent data insights
+            and AI-driven transformation.
           </p>
         </div>
 
@@ -72,27 +72,28 @@ const AboutSection = () => {
             <div className="space-y-6">
               <h3 className="text-3xl lg:text-4xl font-bold">Our Story</h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Founded in 2022, Tachimao emerged from a simple observation: businesses
-                were drowning in repetitive tasks and disconnected systems. We knew there
-                had to be a better way.
+                Scholarix Global was founded on a vision: to bridge the gap between raw data
+                and actionable intelligence. Based in the UAE's thriving business ecosystem,
+                we recognized that enterprises were struggling to harness their data's full potential.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Today, we're proud to serve 50+ enterprise clients worldwide, delivering
-                AI-powered solutions that eliminate headaches and unlock growth potential.
+                Today, we partner with forward-thinking organizations across the region, transforming
+                complex data into strategic insights that drive measurable ROI and sustainable growth.
               </p>
             </div>
 
             <div className="space-y-6">
               <h3 className="text-3xl lg:text-4xl font-bold">Our Mission</h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                To empower businesses with intelligent automation that simplifies
-                operations, enhances productivity, and drives sustainable growth.
+                To empower enterprises with cutting-edge data analytics and AI solutions
+                that unlock hidden insights, drive informed decisions, and accelerate
+                digital transformation.
               </p>
               <div className="flex items-center gap-3 p-4 glass-card">
                 <TrendingUp className="w-8 h-8 text-primary flex-shrink-0" />
                 <p className="text-sm text-muted-foreground">
-                  <span className="text-foreground font-semibold">One System. Zero Headaches.</span>
-                  <br />Our promise to every client.
+                  <span className="text-foreground font-semibold">Navigate. Innovate. Transform.</span>
+                  <br />Our commitment to your success.
                 </p>
               </div>
             </div>

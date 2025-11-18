@@ -31,7 +31,7 @@ const PrivacyPolicy = () => {
             {/* Introduction */}
             <section>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                At Tachimao, we take your privacy seriously. This Privacy Policy explains how we collect,
+                At Scholarix Global, we take your privacy seriously. This Privacy Policy explains how we collect,
                 use, disclose, and safeguard your information when you visit our website and use our services.
               </p>
             </section>
@@ -121,7 +121,7 @@ const PrivacyPolicy = () => {
                   <li><strong>Service Providers:</strong> With trusted third-party service providers who assist us in operating our website and providing our services</li>
                   <li><strong>Legal Requirements:</strong> When required by law, court order, or government regulation</li>
                   <li><strong>Business Transfers:</strong> In connection with a merger, acquisition, or sale of assets</li>
-                  <li><strong>Protection:</strong> To protect the rights, property, or safety of Tachimao, our users, or others</li>
+                  <li><strong>Protection:</strong> To protect the rights, property, or safety of Scholarix Global, our users, or others</li>
                 </ul>
               </div>
             </section>
@@ -144,8 +144,8 @@ const PrivacyPolicy = () => {
                 </ul>
                 <p className="mt-4">
                   To exercise these rights, please contact us at{" "}
-                  <a href="mailto:privacy@tachimao.com" className="text-primary hover:text-accent underline">
-                    privacy@tachimao.com
+                  <a href="mailto:privacy@scholarixglobal.com" className="text-primary hover:text-accent underline">
+                    privacy@scholarixglobal.com
                   </a>
                 </p>
               </div>
@@ -198,9 +198,9 @@ const PrivacyPolicy = () => {
                 If you have any questions about this Privacy Policy or our privacy practices, please contact us:
               </p>
               <div className="space-y-2 text-muted-foreground">
-                <p><strong>Email:</strong> <a href="mailto:privacy@tachimao.com" className="text-primary hover:text-accent">privacy@tachimao.com</a></p>
-                <p><strong>Phone:</strong> <a href="tel:+15551234567" className="text-primary hover:text-accent">+1 (555) 123-4567</a></p>
-                <p><strong>Address:</strong> San Francisco, CA</p>
+                <p><strong>Email:</strong> <a href="mailto:privacy@scholarixglobal.com" className="text-primary hover:text-accent">privacy@scholarixglobal.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+971501234567" className="text-primary hover:text-accent">+971 50 123 4567</a></p>
+                <p><strong>Address:</strong> Dubai, United Arab Emirates</p>
               </div>
             </section>
           </div>

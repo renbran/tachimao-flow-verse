@@ -31,7 +31,7 @@ const TermsOfService = () => {
             {/* Introduction */}
             <section>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Welcome to Tachimao. By accessing or using our website and services, you agree to be bound by these
+                Welcome to Scholarix Global. By accessing or using our website and services, you agree to be bound by these
                 Terms of Service. Please read them carefully before using our services.
               </p>
             </section>
@@ -43,7 +43,7 @@ const TermsOfService = () => {
                 <h2 className="text-2xl font-bold">Acceptance of Terms</h2>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                By accessing or using Tachimao's website, services, or products, you acknowledge that you have read,
+                By accessing or using Scholarix Global's website, services, or products, you acknowledge that you have read,
                 understood, and agree to be bound by these Terms of Service and our Privacy Policy. If you do not agree
                 to these terms, please do not use our services.
               </p>
@@ -53,14 +53,14 @@ const TermsOfService = () => {
             <section>
               <h2 className="text-2xl font-bold mb-4">Description of Services</h2>
               <div className="space-y-3 text-muted-foreground">
-                <p>Tachimao provides business automation and AI solutions, including but not limited to:</p>
+                <p>Scholarix Global provides data analytics and enterprise AI consulting services, including but not limited to:</p>
                 <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>CRM with AI-powered lead scoring</li>
-                  <li>Automated invoicing systems</li>
-                  <li>Sales offer generation</li>
-                  <li>AI agents for client interaction</li>
-                  <li>Property and inventory automation</li>
-                  <li>Employee onboarding management tools</li>
+                  <li>Enterprise data analytics and business intelligence</li>
+                  <li>AI-driven automation solutions</li>
+                  <li>Predictive analytics and forecasting</li>
+                  <li>Data strategy consulting</li>
+                  <li>Custom AI model development</li>
+                  <li>Digital transformation consulting</li>
                 </ul>
                 <p className="mt-4">
                   We reserve the right to modify, suspend, or discontinue any part of our services at any time without
@@ -99,7 +99,7 @@ const TermsOfService = () => {
                 <p>
                   All content, features, and functionality of our services, including but not limited to text, graphics,
                   logos, icons, images, audio clips, video clips, data compilations, and software, are the exclusive
-                  property of Tachimao or its licensors and are protected by international copyright, trademark, patent,
+                  property of Scholarix Global or its licensors and are protected by international copyright, trademark, patent,
                   trade secret, and other intellectual property laws.
                 </p>
                 <p>
@@ -115,7 +115,7 @@ const TermsOfService = () => {
               <h2 className="text-2xl font-bold mb-4">Payment and Billing</h2>
               <div className="space-y-3 text-muted-foreground">
                 <p>
-                  If you purchase services from Tachimao, you agree to provide accurate and complete payment information.
+                  If you purchase services from Scholarix Global, you agree to provide accurate and complete payment information.
                   You authorize us to charge your payment method for all fees incurred.
                 </p>
                 <ul className="list-disc list-inside space-y-2 ml-4 mt-3">
@@ -153,7 +153,7 @@ const TermsOfService = () => {
               <h2 className="text-2xl font-bold mb-4">Limitation of Liability</h2>
               <div className="space-y-3 text-muted-foreground">
                 <p>
-                  To the fullest extent permitted by law, Tachimao shall not be liable for any indirect, incidental,
+                  To the fullest extent permitted by law, Scholarix Global shall not be liable for any indirect, incidental,
                   special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred
                   directly or indirectly, or any loss of data, use, goodwill, or other intangible losses resulting from:
                 </p>
@@ -174,7 +174,7 @@ const TermsOfService = () => {
             <section>
               <h2 className="text-2xl font-bold mb-4">Indemnification</h2>
               <p className="text-muted-foreground leading-relaxed">
-                You agree to indemnify, defend, and hold harmless Tachimao and its officers, directors, employees,
+                You agree to indemnify, defend, and hold harmless Scholarix Global and its officers, directors, employees,
                 contractors, agents, licensors, and suppliers from and against any claims, liabilities, damages,
                 judgments, awards, losses, costs, expenses, or fees (including reasonable attorneys' fees) arising
                 out of or relating to your violation of these Terms or your use of our services.
@@ -207,12 +207,12 @@ const TermsOfService = () => {
               <h2 className="text-2xl font-bold mb-4">Governing Law and Dispute Resolution</h2>
               <div className="space-y-3 text-muted-foreground">
                 <p>
-                  These Terms shall be governed by and construed in accordance with the laws of the State of California,
-                  United States, without regard to its conflict of law provisions.
+                  These Terms shall be governed by and construed in accordance with the laws of the United Arab Emirates,
+                  without regard to its conflict of law provisions.
                 </p>
                 <p>
                   Any disputes arising from these Terms or your use of our services shall be resolved through binding
-                  arbitration in San Francisco, California, except that either party may seek injunctive relief in
+                  arbitration in Dubai, United Arab Emirates, except that either party may seek injunctive relief in
                   court for infringement of intellectual property rights.
                 </p>
               </div>
@@ -244,7 +244,7 @@ const TermsOfService = () => {
               <h2 className="text-2xl font-bold mb-4">Entire Agreement</h2>
               <p className="text-muted-foreground leading-relaxed">
                 These Terms of Service, together with our Privacy Policy, constitute the entire agreement between
-                you and Tachimao regarding the use of our services and supersede all prior agreements and understandings.
+                you and Scholarix Global regarding the use of our services and supersede all prior agreements and understandings.
               </p>
             </section>
 
@@ -255,9 +255,9 @@ const TermsOfService = () => {
                 If you have any questions about these Terms of Service, please contact us:
               </p>
               <div className="space-y-2 text-muted-foreground">
-                <p><strong>Email:</strong> <a href="mailto:legal@tachimao.com" className="text-primary hover:text-accent">legal@tachimao.com</a></p>
-                <p><strong>Phone:</strong> <a href="tel:+15551234567" className="text-primary hover:text-accent">+1 (555) 123-4567</a></p>
-                <p><strong>Address:</strong> San Francisco, CA</p>
+                <p><strong>Email:</strong> <a href="mailto:legal@scholarixglobal.com" className="text-primary hover:text-accent">legal@scholarixglobal.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:+971501234567" className="text-primary hover:text-accent">+971 50 123 4567</a></p>
+                <p><strong>Address:</strong> Dubai, United Arab Emirates</p>
               </div>
             </section>
           </div>

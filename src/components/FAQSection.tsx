@@ -9,44 +9,44 @@ import {
 const FAQSection = () => {
   const faqs = [
     {
-      question: "What services does Tachimao offer?",
-      answer: "Tachimao provides comprehensive business automation solutions including CRM with AI-powered lead scoring, automated invoicing systems, sales offer generation, AI agents for client interaction, and property & inventory automation. We help businesses streamline their operations and eliminate manual processes."
+      question: "What services does Scholarix Global offer?",
+      answer: "Scholarix Global provides enterprise data analytics and AI consulting services including business intelligence solutions, predictive analytics and forecasting, AI-driven automation, custom AI model development, data strategy consulting, and comprehensive digital transformation services. We help enterprises unlock the full potential of their data to drive strategic decisions and measurable ROI."
     },
     {
       question: "How long does implementation typically take?",
-      answer: "Implementation timelines vary based on the complexity of your needs. Simple solutions like automated invoicing can be deployed in 1-2 weeks, while comprehensive systems may take 4-8 weeks. We provide a detailed timeline during our initial consultation and work efficiently to get you up and running quickly."
+      answer: "Implementation timelines vary based on project scope and complexity. Simple analytics dashboards can be deployed in 2-3 weeks, while comprehensive AI solutions may take 8-12 weeks. We provide a detailed project timeline during our initial consultation and follow agile methodologies to deliver value incrementally throughout the engagement."
     },
     {
       question: "Do you offer custom solutions or only pre-built packages?",
-      answer: "We offer both! While we have proven solutions that work for most businesses, we specialize in customizing our services to fit your specific workflows and requirements. Every business is unique, and our team works closely with you to tailor solutions that address your particular challenges."
+      answer: "We specialize in custom, enterprise-grade solutions tailored to your specific business challenges and data landscape. While we leverage proven frameworks and methodologies, every implementation is customized to align with your unique workflows, existing infrastructure, and strategic objectives. Our consultative approach ensures solutions that deliver real business value."
     },
     {
       question: "What kind of support do you provide?",
-      answer: "We provide 24/7 technical support to all our clients. This includes a dedicated support team, comprehensive documentation, video tutorials, regular system health checks, and ongoing optimization. We're committed to your success and are always available when you need us."
+      answer: "We provide 24/7 expert support to all enterprise clients. This includes dedicated data scientists and AI specialists, comprehensive documentation, knowledge transfer sessions, regular model performance reviews, proactive optimization, and strategic consulting. We're committed to your long-term success and continuous improvement of your analytics capabilities."
     },
     {
-      question: "Is my data secure with Tachimao?",
-      answer: "Absolutely. Security is our top priority. We use enterprise-grade encryption, secure cloud infrastructure, regular security audits, and comply with industry standards including GDPR and SOC 2. Your data is protected with multiple layers of security and is never shared with third parties without your explicit consent."
+      question: "Is my data secure with Scholarix Global?",
+      answer: "Absolutely. Security and compliance are paramount. We implement bank-level encryption, secure cloud infrastructure, strict access controls, regular security audits, and comply with international standards including GDPR, SOC 2, and UAE data protection regulations. Your data is protected with multiple layers of security and is never shared without explicit authorization."
     },
     {
-      question: "Can Tachimao integrate with my existing tools?",
-      answer: "Yes! Our solutions are designed to integrate seamlessly with popular business tools including CRMs (Salesforce, HubSpot), accounting software (QuickBooks, Xero), communication platforms (Slack, Microsoft Teams), and many others. We also offer custom API integrations for specialized tools."
+      question: "Can Scholarix Global integrate with our existing data infrastructure?",
+      answer: "Yes! We have extensive experience integrating with diverse enterprise systems including cloud platforms (AWS, Azure, GCP), data warehouses (Snowflake, Redshift, BigQuery), business intelligence tools (Tableau, Power BI), CRMs (Salesforce, Dynamics), ERPs (SAP, Oracle), and custom APIs. Our solutions are designed to work seamlessly within your existing technology ecosystem."
     },
     {
       question: "What are your pricing models?",
-      answer: "We offer flexible pricing based on your needs, including monthly subscriptions, annual contracts, and custom enterprise agreements. Pricing depends on the solutions you choose, the number of users, and the level of customization required. Contact us for a personalized quote tailored to your business."
+      answer: "We offer flexible engagement models tailored to enterprise needs, including project-based consulting, monthly retainers, annual partnerships, and outcome-based pricing tied to measurable KPIs. Pricing depends on project scope, required expertise, implementation complexity, and ongoing support needs. Contact us for a customized proposal aligned with your budget and objectives."
     },
     {
-      question: "Do you provide training for my team?",
-      answer: "Yes! We provide comprehensive training as part of our onboarding process. This includes live training sessions, recorded tutorials, documentation, and ongoing support. We ensure your team is fully equipped to leverage our solutions effectively from day one."
+      question: "Do you provide training and knowledge transfer?",
+      answer: "Yes! Knowledge transfer is integral to our methodology. We provide comprehensive training including hands-on workshops, documentation, best practices guides, and ongoing mentorship. Our goal is to empower your team with the skills and confidence to leverage analytics and AI effectively, ensuring sustainable value long after implementation."
     },
     {
-      question: "What if I need changes after implementation?",
-      answer: "We're here for the long term! Our services include ongoing support and optimization. If you need changes, updates, or new features, simply reach out to your dedicated account manager. We regularly update our systems and can accommodate evolving business needs."
+      question: "What if our needs evolve after implementation?",
+      answer: "We build for evolution! All our solutions are designed with scalability and adaptability in mind. We offer ongoing optimization services, regular model retraining, feature enhancements, and strategic consulting to ensure your analytics capabilities grow with your business. Your dedicated account team proactively identifies opportunities for continuous improvement."
     },
     {
-      question: "How do I get started?",
-      answer: "Getting started is easy! Simply click the 'Get Started' button, fill out our contact form, or call us directly. We'll schedule a free consultation to understand your needs, provide a custom proposal, and outline the next steps. No commitment required for the initial consultation."
+      question: "How do I get started with Scholarix Global?",
+      answer: "Getting started is simple! Contact us via email, phone, or our booking system to schedule a complimentary 30-minute discovery call. We'll discuss your data challenges, explore potential solutions, assess feasibility, and provide initial recommendations. Following this, we'll develop a detailed proposal with clear deliverables, timelines, and ROI projections. No obligation required."
     }
   ];
 

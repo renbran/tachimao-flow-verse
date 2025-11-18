@@ -74,7 +74,7 @@ const Scene3D = () => {
 
   return (
     <>
-      {/* Central Core - Represents Tachimao's unified system */}
+      {/* Central Core - Represents Scholarix Global's unified data intelligence platform */}
       <Float speed={1} rotationIntensity={0.5} floatIntensity={1}>
         <mesh 
           position={[0, 0, 0]}
