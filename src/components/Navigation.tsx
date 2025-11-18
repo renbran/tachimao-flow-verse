@@ -11,6 +11,7 @@ const Navigation = () => {
     { name: "Onboarding Flow", href: "/onboarding-flowchart", isRoute: true },
     { name: "Solutions", href: "#solutions", isRoute: false },
     { name: "About", href: "#about", isRoute: false },
+    { name: "Pricing", href: "#pricing", isRoute: false },
     { name: "Contact", href: "#contact", isRoute: false },
   ];
 
