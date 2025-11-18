@@ -176,7 +176,7 @@ const OnboardingFlowchart = () => {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100">
       <Navigation />
 
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-8 pt-20">
         <div className="mb-6">
           <Button
             variant="ghost"
@@ -186,10 +186,10 @@ const OnboardingFlowchart = () => {
             <ChevronLeft className="mr-2 h-4 w-4" />
             Back to Home
           </Button>
-          <h1 className="text-4xl font-bold text-slate-900 mb-2">
+          <h1 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-2">
             Onboarding Flowchart
           </h1>
-          <p className="text-slate-600">
+          <p className="text-sm sm:text-base text-slate-600">
             Comprehensive employee onboarding process with detailed requirements for each stage
           </p>
         </div>
@@ -199,13 +199,13 @@ const OnboardingFlowchart = () => {
           <div className="lg:col-span-2">
             <Card className="shadow-xl border-2">
               <CardHeader>
-                <CardTitle>Onboarding Process Flow</CardTitle>
-                <CardDescription>
+                <CardTitle className="text-lg sm:text-xl">Onboarding Process Flow</CardTitle>
+                <CardDescription className="text-sm">
                   Click on any stage to view detailed requirements
                 </CardDescription>
               </CardHeader>
               <CardContent className="p-0">
-                <div className="h-[700px] bg-slate-50">
+                <div className="h-[500px] sm:h-[600px] lg:h-[700px] bg-slate-50">
                   <ReactFlow
                     nodes={nodes}
                     edges={edges}
@@ -215,9 +215,11 @@ const OnboardingFlowchart = () => {
                     nodeTypes={nodeTypes}
                     fitView
                     className="bg-slate-50"
+                    minZoom={0.5}
+                    maxZoom={1.5}
                   >
                     <Background variant={BackgroundVariant.Dots} gap={12} size={1} />
-                    <Controls />
+                    <Controls className="bg-white rounded-lg shadow-md" />
                   </ReactFlow>
                 </div>
               </CardContent>
@@ -226,16 +228,16 @@ const OnboardingFlowchart = () => {
 
           {/* Details Panel */}
           <div className="lg:col-span-1">
-            <Card className="shadow-xl border-2 sticky top-8">
+            <Card className="shadow-xl border-2 lg:sticky lg:top-8">
               <CardHeader>
-                <CardTitle>Stage Details</CardTitle>
-                <CardDescription>
+                <CardTitle className="text-lg sm:text-xl">Stage Details</CardTitle>
+                <CardDescription className="text-sm">
                   {selectedStage ? 'Requirements and checklist' : 'Select a stage to view details'}
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 {selectedStage ? (
-                  <ScrollArea className="h-[630px] pr-4">
+                  <ScrollArea className="h-[400px] sm:h-[500px] lg:h-[630px] pr-4">
                     <div className="space-y-4">
                       <div>
                         <h3 className="text-xl font-bold text-slate-900 mb-2">
@@ -310,11 +312,11 @@ const OnboardingFlowchart = () => {
                     </div>
                   </ScrollArea>
                 ) : (
-                  <div className="h-[630px] flex items-center justify-center text-center">
-                    <div className="text-slate-400">
-                      <div className="text-6xl mb-4">📋</div>
-                      <p className="text-lg">Click on any stage in the flowchart</p>
-                      <p className="text-sm">to view its detailed requirements</p>
+                  <div className="h-[400px] sm:h-[500px] lg:h-[630px] flex items-center justify-center text-center">
+                    <div className="text-slate-400 px-4">
+                      <div className="text-4xl sm:text-6xl mb-4">📋</div>
+                      <p className="text-base sm:text-lg">Click on any stage in the flowchart</p>
+                      <p className="text-xs sm:text-sm">to view its detailed requirements</p>
                     </div>
                   </div>
                 )}
@@ -324,15 +326,15 @@ const OnboardingFlowchart = () => {
         </div>
 
         {/* Summary Statistics */}
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
           <Card>
             <CardHeader className="pb-3">
-              <CardTitle className="text-sm font-medium text-slate-600">
+              <CardTitle className="text-xs sm:text-sm font-medium text-slate-600">
                 Total Stages
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="text-3xl font-bold text-slate-900">
+              <div className="text-2xl sm:text-3xl font-bold text-slate-900">
                 {onboardingStages.length}
               </div>
             </CardContent>
@@ -340,12 +342,12 @@ const OnboardingFlowchart = () => {
 
           <Card>
             <CardHeader className="pb-3">
-              <CardTitle className="text-sm font-medium text-slate-600">
+              <CardTitle className="text-xs sm:text-sm font-medium text-slate-600">
                 Total Requirements
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="text-3xl font-bold text-slate-900">
+              <div className="text-2xl sm:text-3xl font-bold text-slate-900">
                 {onboardingStages.reduce((acc, stage) => acc + stage.requirements.length, 0)}
               </div>
             </CardContent>
@@ -353,12 +355,12 @@ const OnboardingFlowchart = () => {
 
           <Card>
             <CardHeader className="pb-3">
-              <CardTitle className="text-sm font-medium text-slate-600">
+              <CardTitle className="text-xs sm:text-sm font-medium text-slate-600">
                 Categories
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="text-3xl font-bold text-slate-900">
+              <div className="text-2xl sm:text-3xl font-bold text-slate-900">
                 {new Set(onboardingStages.map(s => s.category)).size}
               </div>
             </CardContent>
@@ -366,12 +368,12 @@ const OnboardingFlowchart = () => {
 
           <Card>
             <CardHeader className="pb-3">
-              <CardTitle className="text-sm font-medium text-slate-600">
+              <CardTitle className="text-xs sm:text-sm font-medium text-slate-600">
                 Avg. Req/Stage
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <div className="text-3xl font-bold text-slate-900">
+              <div className="text-2xl sm:text-3xl font-bold text-slate-900">
                 {(onboardingStages.reduce((acc, stage) => acc + stage.requirements.length, 0) / onboardingStages.length).toFixed(1)}
               </div>
             </CardContent>
